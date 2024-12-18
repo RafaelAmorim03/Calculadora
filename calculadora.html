@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo">
+        <h1  id="nome">Calculadora do Rafa</h1>
+
+        <div class="calculadora">
+            
+            <p id="resultado" ></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="back()" style="background-color: #F9217A;color : white;" ><</button></td>
+                    <td><button class="botao" onclick="limpar()" style="background-color: #969698; color : #F9217A;">C</button></td>
+                    <td><button class="botao" onclick="digito('/')" style="background-color: #969698; color : #F9217A;">÷</button></td>
+                    <td><button class="botao" onclick="digito('*')" style="background-color: #969698; color : #F9217A;">X</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="digito('7')">7</button></td>
+                    <td><button class="botao" onclick="digito('8')">8</button></td>
+                    <td><button class="botao" onclick="digito('9')">9</button></td>
+                    <td><button class="botao" onclick="digito('-')" style="background-color: #969698; color : #F9217A;">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="digito('4')">4</button></td>
+                    <td><button class="botao" onclick="digito('5')">5</button></td>
+                    <td><button class="botao" onclick="digito('6')">6</button></td>
+                    <td><button class="botao" onclick="digito('+')" style="background-color: #969698; color : #F9217A;">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao" onclick="digito('1')">1</button></td>
+                    <td><button class="botao" onclick="digito('2')">2</button></td>
+                    <td><button class="botao" onclick="digito('3')">3</button></td>
+                    <td rowspan="2"><button onclick="calculo()" class="igualdade" style="background-color: #F9217A;color : white;width: 70px;height: 140px;font-size: large;">=</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button style="width: 140px;" class="botao" onclick="digito('0')">0</button></td>
+                    <td><button class="botao" onclick="digito('.')">.</button></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
